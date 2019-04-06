@@ -1,7 +1,7 @@
 <?php
 session_start();
 $config = array(
-   "host" => "localhost",
+   "host" => "127.0.0.1",
    "user" => "root",
    "pass" => "",
    "name" => ""
