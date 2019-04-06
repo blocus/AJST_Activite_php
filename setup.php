@@ -1,7 +1,13 @@
 <?php
 session_start();
-//                    host         user    pass    db
-$dbc = mysqli_connect("localhost", "ajst", "ajst", "ajst");
+$config = array(
+   "host" => "localhost",
+   "user" => "root",
+   "pass" => "",
+   "name" => ""
+);
+
+$dbc = mysqli_connect($config["host"], $config["user"], $config["pass"], $config["name"]);
 if(isset($_GET['logout'])){
    session_destroy();
    header('Location: index.php');
