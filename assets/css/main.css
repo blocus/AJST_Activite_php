@@ -1,0 +1,70 @@
+html, body{
+   padding: 0px;
+   margin: 0px;
+}
+
+header{
+   background: #CCC;
+   height: 40px;
+   width: 100vw;
+}
+
+section{
+   background: #FFFFFF;
+   width: calc(100vw - 200px);
+   height: calc(100vh - 71px)
+}
+
+footer{
+   background: #CCC;
+   height: 30px;
+   border-top: 1px solid #555;
+   width: 100vw;
+   text-align: center;
+}
+
+#logo{
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 30px;
+   width: 150px;
+   float:left;
+}
+
+.navTop{
+   float: right;
+   margin: 0px;
+   font-size: 14px;
+}
+
+.navTop li{
+   float: left;
+   width: 150px;
+   text-align: center;
+   list-style-type: none;
+   font-family: monospace;
+   margin-left: 10px;
+}
+
+.navTop li a{
+   width: 100%;
+   height: calc(100% - 12px);
+   padding-top: 12px;
+   color: #FFF;
+   display: block;
+   text-decoration: none;
+   background: red;
+}
+
+.navTop li a:hover{
+   background: #ee854f;
+   color: #FFF;
+}
+
+.sideBar{
+   width: 200px;
+   height: calc(100vh - 71px);
+
+   background: green;
+   float: left;
+}
