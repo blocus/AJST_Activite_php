@@ -41,6 +41,16 @@ require("setup.php");
          }
        ?>
       <section>
+         <?php
+         if(isset($_SESSION["user"])){
+            ?>
+               <form class="addPost" action="addPost.php" method="POST">
+                  <textarea name="textPost"></textarea>
+                  <button name="sendTextPost" type="submit">Envoyer</button>
+               </form>
+            <?php
+         }
+         ?>
       </section>
       <footer>
          <a target="_blank" href="https://github.com/blocus/AJST_Activite_php">Lien GitHub</a>
